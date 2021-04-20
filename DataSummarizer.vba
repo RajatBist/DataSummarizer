@@ -3,7 +3,7 @@ Sub PivotBuilder()
     Dim oTable As PivotTable, oField As PivotField, oWS As Worksheet
     
     Set oWS = ActiveSheet
-    If Range("D1") = "" Then MsgBox "You are on the wrong sheet ": Exit Sub
+    If Range("D1") = "" Then MsgBox "You are on the wrong sheet": Exit Sub
     sRow1 = Application.InputBox("Click on label for rows", , , , , , , 2)
     sRow2 = Application.InputBox("Click on label for 2nd row (or Cancel)", , , , , , , 2)
     sCol = Application.InputBox("Click on label for cols (or Cancel)", , , , , , , 2)
